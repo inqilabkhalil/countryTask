@@ -3,7 +3,7 @@ let searchBtn = document.querySelector(".searchBtn")
 let countriesContainer = document.getElementById("countriesContainer")
 
 async function getCountry(country){
-    const url = `https://restcountries.com/v3.1/name/${country}?fullText=true`
+    const url = `https://restcountries.com/v3.1/name/${country}`
 
     try{
           let response = await fetch(url);
